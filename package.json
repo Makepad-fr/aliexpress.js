@@ -1,0 +1,42 @@
+{
+  "name": "@scraping.house/aliexpress",
+  "version": "1.0.0",
+  "description": "Web scraper for AliExpress",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "scripts": {
+    "build": "node_modules/.bin/eslint -c .eslintrc.json --fix src/*.ts && ./node_modules/.bin/tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Makepad-fr/aliexpress.js.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "Web",
+    "scraper",
+    "scraper",
+    "data",
+    "mining",
+    "aliexpress",
+    "e-commerce"
+  ],
+  "author": "Makepad Developers <dev@makepad.fr>",
+  "license": "LGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Makepad-fr/aliexpress.js/issues"
+  },
+  "homepage": "https://github.com/Makepad-fr/aliexpress.js#readme",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "playwright": "^1.29.2",
+    "playwright-core": "^1.29.2"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "@typescript-eslint/parser": "^5.48.0",
+    "eslint": "^8.31.0",
+    "typescript": "^4.9.4"
+  }
+}
