@@ -17,7 +17,6 @@ export interface ItemDetails {
     id: string;
     storeDetails: StoreDetails;
     title: string;
-    price: PriceDetails;
     sellCount: number;
     rating?: number | undefined;
     extraDiscount?: string | undefined; //TODO: Something like €2 offert dès € 25 d'achat
@@ -36,13 +35,26 @@ export interface ItemPhoto {
 }
 
 /**
+ * Represents the stock information for an item
+ */
+export interface ItemStock {
+    price: PriceDetails,
+    size: ItemSize,
+    color: string,
+    availableItemCount: number;
+    photo: ItemPhoto
+}
+
+/**
  * The Item represents the complete item information, therefor it's inherited from the ItemDetails interface
  */
 export interface Item extends ItemDetails {
+    sku: string;
     originalPhotos: ItemPhoto[];
     commentPhotos: ItemPhoto[];
     sizes: ItemSize[];
     colors: string[];
     commentsCount: number | undefined;
     ratersCount: number | undefined;
+    stock: ItemStock[]
 }
