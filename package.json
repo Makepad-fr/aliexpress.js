@@ -1,5 +1,5 @@
 {
-  "name": "@scraping.house/aliexpress",
+  "name": "@makepad/aliexpressjs",
   "version": "1.0.0",
   "description": "Web scraper for AliExpress",
   "main": "out/index.js",
