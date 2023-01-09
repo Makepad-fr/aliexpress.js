@@ -9,7 +9,7 @@
 Here's an example application to save the item details in to a JSON file:
 
 ```ts
-import AliExpress from "aliexpress.js";
+import AliExpress from "@makepad/aliexpressjs";
 
 async function downloadPhotoFromURL(url: URL) {
     console.log(`The URL of the photo to download ${url}`);
