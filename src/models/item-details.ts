@@ -52,7 +52,7 @@ export interface Item extends ItemDetails {
     sku: string;
     originalPhotos: ItemPhoto[];
     commentPhotos: ItemPhoto[];
-    sizes: ItemSize[];
+    sizes?: ItemSize[] | [];
     colors: string[];
     commentsCount: number | undefined;
     ratersCount: number | undefined;
